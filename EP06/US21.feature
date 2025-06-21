@@ -1,5 +1,5 @@
 Feature: US21 - Reservar y gestionar sesiones virtuales
-
+Como usuario, deseo reservar sesiones virtuales con especialistas para recibir orientación.
   Scenario: E1: Reservar una sesión con un especialista
     Given que el usuario selecciona un especialista
     When elige una fecha y hora disponibles
