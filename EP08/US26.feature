@@ -1,5 +1,5 @@
 Feature: US26 - Recomendaciones personalizadas según comportamiento y preferencias
-
+Como usuario, deseo recibir recomendaciones adaptativas basadas en mis preferencias.
   Scenario: E1: Ajustar recomendaciones tras completar o ignorar actividades
     Given que el usuario completa o ignora actividades
     When la app registra sus respuestas
