@@ -1,5 +1,5 @@
 Feature: US22 - Configuración y gestión de privacidad
-
+Como usuario, deseo configurar mi privacidad para controlar qué datos personales se recopilan.
   Scenario: E1: Activar/desactivar permisos de uso de datos
     Given que el usuario accede a configuración
     When entra en la sección de privacidad
