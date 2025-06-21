@@ -1,5 +1,5 @@
 Feature: US27 - Visualización y análisis del historial de actividades
-
+Como usuario, deseo ver un historial de actividades completadas para monitorear mi progreso.
   Scenario: E1: Ver lista de actividades realizadas
     Given que el usuario abre la sección de historial
     When accede a la lista
