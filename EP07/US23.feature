@@ -1,5 +1,5 @@
 Feature: US23 - Visualización de políticas de datos
-
+Como usuario, deseo ver las políticas de uso de datos para entender cómo se manejan mis datos.
   Scenario: E1: Acceder y leer políticas actualizadas
     Given que el usuario está en configuración
     When selecciona “Políticas de privacidad”
