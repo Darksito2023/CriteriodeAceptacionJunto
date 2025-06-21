@@ -1,5 +1,5 @@
 Feature: US30 - Recordatorios para desconectarse antes de dormir
-
+Como usuario, deseo recibir recordatorios de desconexión antes de dormir para mejorar mi descanso.
   Scenario: E1: Enviar recordatorio 30 minutos antes de la hora de dormir
     Given que el usuario ha configurado una hora de acostarse
     When faltan 30 minutos para esa hora
