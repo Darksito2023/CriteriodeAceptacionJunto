@@ -1,20 +1,6 @@
-Feature: US22 - Configuración y gestión de privacidad
-Como usuario, deseo configurar mi privacidad para controlar qué datos personales se recopilan.
-  Scenario: E1: Activar/desactivar permisos de uso de datos
-    Given que el usuario accede a configuración
-    When entra en la sección de privacidad
-    Then puede activar o desactivar el uso de sus datos para análisis, notificaciones y comunidad
+Feature: Mostrar DNI en el perfil
 
-    Examples:
-      | Permiso                | Estado actual | Acción a realizar    |
-      | Uso de análisis        | Activado        | Desactivar           |
-      | Notificaciones         | Activado        | Desactivar           |
-
-  Scenario: E2: Limitar acceso desactivando permisos
-    Given que el usuario quiere limitar el acceso
-    When desactiva ciertos permisos
-    Then las funciones disponibles se ajustan sin comprometer la seguridad
-
-    Examples:
-      | Permiso desactivado | Función afectada                  |
-      | Acceso a comunidad | No se muestran publicaciones públicas |
+Scenario: Verificación del DNI en el perfil
+  Given que soy un usuario
+  When reviso mi perfil
+  Then debería ver mi "DNI" para verificar la información
