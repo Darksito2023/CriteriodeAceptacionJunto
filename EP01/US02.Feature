@@ -1,13 +1,8 @@
-Feature: US02 - Análisis de texto para detectar ansiedad
-Como usuario adolescente, quiero que la IA analice el texto que escribo en la app para detectar señales de ansiedad, y así recibir apoyo o sugerencias oportunas.
-Scenario: E1: Análisis de mensajes escritos
-  Given que el usuario ingresa un texto en la sección de diario o chat,
-  When el sistema analiza el contenido y detecta palabras relacionadas con ansiedad,
-  Then genera una alerta y sugiere técnicas de manejo emocional.
-  
-  Examples: INPUT
-  | Texto ingresado |
-  | "Estoy muy estresado por la tarea" |
-  
-  Examples: OUTPUT
-  | Notificación de ansiedad y sugerencia de respiración |
+
+Feature: Detección de ansiedad por análisis de texto
+
+Scenario: Análisis de texto para detectar ansiedad
+  Given que soy un usuario adolescente
+  When escribo texto en la aplicación
+  Then la IA debería analizar mi texto para detectar señales de ansiedad
+  And debería recibir apoyo basado en el análisis
